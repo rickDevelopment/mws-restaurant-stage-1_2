@@ -1,4 +1,4 @@
-.container, mainContent{
+.container,{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -6,17 +6,15 @@
 img, embed, video, object{
   max-width: 100%;
 }
-nav{
-  width: 100%;
-}
 nav a, button{
   min-width: 48px;
   min-height: 48px;
 }
-/*
-.maincontent, html, body, main{
+
+ html, body, main, .main-content, section, .nav-bar{
   width: 100%;
 }
+/*
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main{
   display: flex;
   flex-wrap: wrap;
