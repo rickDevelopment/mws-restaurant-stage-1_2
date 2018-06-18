@@ -1,0 +1,121 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+img, embed, video, object{
+  max-width: 100%;
+}
+nav a, button{
+  min-width: 48px;
+  min-height: 48px;
+}
+
+ html, body, main, .main-content, .nav-bar{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*=================Nav Bar======================*/
+.nav-bar {
+  /* height: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+nav h1 a {
+  font-size: 1.5em;
+}
+#breadcrumb{
+  width: 100%;
+  padding: 0;
+}
+
+li,p, #footer, #restaurant-hours td{
+  font-size: 1.2em;
+}
+/*================Main Content==================*/
+
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*==================Map=========================*/
+
+.map-container{
+  width: 100%;
+  height: 30vh;
+}
+.inside #map-container {
+  background: blue none repeat scroll 0 0;
+  height: 30vh;
+  position: relative;
+  right: 0;
+  top: 80px;
+  width: 100%;
+}
+/*======================Restaurant hours table===========*/
+table#restaurant-hours {
+  width: 100%;
+}
+#restaurant-address {
+  font-size: 1.2em;
+}
+
+/*=======================Restaurant Review==========*/
+.restaurant-container{
+  display: flex;
+  flex-wrap:wrap;
+  width: 100%;
+}
+
+/* #restaurant-container {
+
+  width: 100%;
+} */
+
+#restaurant-container, #reviews-container {
+  border-bottom: 1px solid #d9d9d9;
+  /* border-top: 1px solid #fff; */
+  padding: 0;
+  padding-top:70px;
+  width: 100%;
+}
+
+#restaurant-img {
+  width: 100%;
+}
+
+#restaurant-cuisine {
+  width: 100%;
+  font-size: 1.5em;
+}
+
+#reviews-container {
+
+  width: 100%;
+  font-size: 1.2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+/*================Footer================*/
+#footer{
+  padding:25px 0;
+  background-color: #252831;
+}
+.inside #footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin:0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#reviews-list li p {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+}
