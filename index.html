@@ -14,16 +14,16 @@
 
 <body>
   <div class="container">
-  <header>
+    <a href="#maincontent" class="skip-link" tabindex="-1">Skip to main content</a>
+    <header>
     <nav class="nav-bar">
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
   </header>
-
+  <section class="map-container" id="map-container">
+        <div id="map"></div>
+      </section>
   <main class = "main-content" id="maincontent">
-    <section class="map-container" id="map-container">
-      <div id="map"></div>
-    </section>
       <section class="filter-options">
         <h2>Filter Results</h2>
         <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
