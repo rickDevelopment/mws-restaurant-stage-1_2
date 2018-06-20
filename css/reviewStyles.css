@@ -16,7 +16,20 @@ nav a, button{
   margin: 0;
   padding: 0;
 }
+/*==============Skip Link===============*/
 
+.skip-link{
+  position: absolute;
+  top:-40px;
+  left: 0;
+  color: white;
+  background:#bf1722;
+  padding: 8px;
+  z-index: 100;
+}
+.skip-link:focus{
+  top: 0;
+}
 /*=================Nav Bar======================*/
 .nav-bar {
   /* height: 100%; */
@@ -57,6 +70,7 @@ li,p, #footer, #restaurant-hours td{
   top: 80px;
   width: 100%;
 }
+
 /*======================Restaurant hours table===========*/
 table#restaurant-hours {
   width: 100%;
@@ -87,6 +101,7 @@ table#restaurant-hours {
 
 #restaurant-img {
   width: 100%;
+  height: 40vh;
 }
 
 #restaurant-cuisine {
@@ -118,4 +133,10 @@ table#restaurant-hours {
 #reviews-list li p {
   margin: 0 0 10px;
   font-size: 1.2em;
+}
+
+@media screen and (max-width:400px){
+  .map-container{
+   display: none;
+ }
 }

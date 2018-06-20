@@ -15,7 +15,24 @@ nav a, button{
   width: 100%;
   margin: 0;
   padding: 0;
+  font-size: 16px;
 }
+/*==============Skip Link===============*/
+
+.skip-link{
+  position: absolute;
+  top:-40px;
+  left: 0;
+  color: white;
+  background:#bf1722;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus{
+  top: 0;
+}
+
 /* ================Nav-bar=========================*/
 header{
   width: 100%;
@@ -31,9 +48,11 @@ header{
 }
 
 /*==================MAP=====================*/
-
+section#map-container {
+  width: 100%;
+}
 #map {
-  height: 30vh;
+  height: 20vh;
 }
 /*===============Filter Options===============*/
 .filter-options {
@@ -135,9 +154,17 @@ body,#restaurants-list p {
 
 
 /*=================================Media Query===============================*/
-@media screen and (max-width:420px){
-  .filter-options h2{
+@media screen and (max-width:400px){
+   .map-container{
     display: none;
+  }
+  .filter-options select {
+    width: 100%;
+  }
+}
+@media screen and (min-width:401px){
+  .filter-options select {
+    width: 45%;
   }
 }
 
@@ -151,6 +178,7 @@ body,#restaurants-list p {
     display: flex;
     flex-wrap: wrap;
   }  
+
 }
 
 @media screen and (min-width:800px){
@@ -160,6 +188,10 @@ body,#restaurants-list p {
     text-align: center;
     margin: 10px;
   }
+  #restaurant-list li:last-of-type {
+    margin-right: 0;
+  }
+  
 }
 @media screen and (min-width:1001px){
   .container {
