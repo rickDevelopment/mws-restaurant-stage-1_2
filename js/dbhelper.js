@@ -18,15 +18,16 @@ class DBHelper {
   static fetchRestaurants(callback) {
     let url = DBHelper.DATABASE_URL;
     fetch(url)
-    .then(function(response){
+    .then(response =>{
       if(!response.ok){
-        console.log(`There was a error  fetching  data:${response.statusText}`)
+        throw Error(`There was a error  fetching  data:${response.statusText}`)
       }
       return response.json()
     })
-    .then(function(restaurants){
+    .then(restaurants =>{
       return callback(null,restaurants)
     })
+    .catch(error => console.log(`A error as occured: ${error}`));
     /*
     let xhr = new XMLHttpRequest();
     xhr.open('GET', DBHelper.DATABASE_URL);
