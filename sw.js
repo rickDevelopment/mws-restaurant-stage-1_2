@@ -2,7 +2,11 @@ let CACHE_NAME="mws-restaurant-stage-1-cache-v1";
 let urlsToCache = [
   '/',
   '/css/',
-  '/js'
+  '/js/',
+  '/img/',
+  '/restaurant.html',
+  
+  
 
 ];
 /*===========Install Service worker======*/
@@ -17,16 +21,17 @@ self.addEventListener('install',function(event){
   );
 });
 /*===========Cache and return request===*/
-// self.addEventListener('fetch', function(event) {
-//   event.respondWith(
-//     caches.match(event.request)
-//       .then(function(response) {
-//         // Cache hit - return response
-//         if (response) {
-//           return response;
-//         }
-//         return fetch(event.request);
-//       }
-//     )
-//   );
-// });
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request)
+      .then(function(response) {
+        // Cache hit - return response
+        
+        if (response) {
+          console.log(`fetch cache ${response}` );return response;
+        }
+        return fetch(event.request);
+      }
+    )
+  );
+});

@@ -22,7 +22,7 @@ class DBHelper {
       if(!response.ok){
         throw Error(`There was a error  fetching  data:${response.statusText}`)
       }
-      return response.json()
+      return response.json();
     })
     .then(restaurants =>{
       return callback(null,restaurants)
