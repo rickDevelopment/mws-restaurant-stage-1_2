@@ -1,0 +1,23 @@
+{
+  "name": "mws-restaurant-stage-1_2",
+  "version": "1.0.0",
+  "description": "restaurant app",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickDevelopment/MWS-project-stage2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rickDevelopment/MWS-project-stage2/issues"
+  },
+  "homepage": "https://github.com/rickDevelopment/MWS-project-stage2#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "idb": "^2.1.3"
+  }
+}
