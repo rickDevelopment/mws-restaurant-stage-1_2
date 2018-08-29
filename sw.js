@@ -1,3 +1,4 @@
+
 let CACHE_NAME="mws-restaurant-stage-1-cache-v1";
 let urlsToCache = [
   '/',
